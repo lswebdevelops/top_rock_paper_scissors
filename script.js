@@ -1,5 +1,6 @@
 
-   
+   let userCounter = 0;
+   let pcCounter = 0;
   
 
 function game(){
@@ -16,26 +17,38 @@ function getComputerChoice(){
 let computerSelection= getComputerChoice();
 
 function roundRPS(){
+    
 let userInput = prompt("Type rock, paper or scissors","paper");
 let playerSelection = userInput.toUpperCase();
 if (playerSelection === computerSelection){
 let tie = `It's a tie! ${playerSelection} is igual to ${computerSelection}`
-console.log(tie);
+alert(tie);
 } else if (playerSelection == 'ROCK' && computerSelection == 'SCISSORS'){
-console.log( "You win! ROCK beats SCISSORS!");
+alert( "You win! ROCK beats SCISSORS!");
+userCounter++;
 } else if (playerSelection == 'ROCK' && computerSelection == 'PAPER'){
-console.log("You lose! PAPER beats ROCK!");
+alert("You lose! PAPER beats ROCK!");
+pcCounter++;
 } else if (playerSelection == 'PAPER' && computerSelection == 'ROCK'){
-console.log("You win! PAPER beats ROCK!");
+alert("You win! PAPER beats ROCK!");
+userCounter++;
 } else if (playerSelection == 'PAPER' && computerSelection == 'SCISSORS'){
-console.log("You lose! SCISSORS beats PAPER!");
+alert("You lose! SCISSORS beats PAPER!");
+pcCounter++;
 } else if (playerSelection == 'SCISSORS' && computerSelection == 'PAPER'){
-console.log( "You win! SCISSORS beats PAPER!");
+alert( "You win! SCISSORS beats PAPER!");
+userCounter++;
 } else if (playerSelection == 'SCISSORS' && computerSelection == 'ROCK') {
-console.log( "You lose! ROCK beats SCISSORS!");
+alert( "You lose! ROCK beats SCISSORS!");
+pcCounter++;
+
 }else{
-    console.log("Please type 'rock', 'paper' or 'scissors'." );
+    alert("Please type 'rock', 'paper' or 'scissors'." );
 }
+let userScore = `Your score is:${userCounter}`;
+let pcScore = `The computer score is: ${pcCounter}`;
+alert(pcScore);
+alert(userScore);
 }
 roundRPS();
         
@@ -43,7 +56,8 @@ roundRPS();
         
 }
 //after 5 turns it prints:
-console.log("End of Game");
+alert("End of Game");
+
 }
 game()
 
