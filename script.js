@@ -1,6 +1,7 @@
 
    let userCounter = 0;
    let pcCounter = 0;
+   let userName = prompt("What is your name? ", "User");
   
 
 function game(){
@@ -62,3 +63,13 @@ alert("End of Game");
 game()
 
 
+
+if(pcCounter < userCounter){
+    alert(`${userName} wins`);
+}
+else if(pcCounter > userCounter){
+    alert("Pc wins");
+}
+else{
+    alert("It's a tie")
+}
