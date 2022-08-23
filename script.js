@@ -57,7 +57,7 @@ roundRPS();
         
 }
 //after 5 turns it prints:
-alert("End of Game");
+
 
 }
 game()
@@ -73,3 +73,5 @@ else if(pcCounter > userCounter){
 else{
     alert("It's a tie")
 }
+
+alert("End of Game");
