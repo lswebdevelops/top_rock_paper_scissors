@@ -126,3 +126,11 @@ p{
 	font-size: 15px;
 	
 }
+
+#imgLoser, #imgNerd{
+	width: 90%;
+	height: auto;
+	border: solid 1px black;
+	box-shadow: none;
+
+}

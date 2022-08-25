@@ -67,24 +67,24 @@ divS.className= 'pcHandHidden';
 function roundRPS(e){
     if(e.target['id'] === "btnR"){
     userInput = "ROCK";
-    console.log(userInput);
+    // console.log(userInput);
     oneRound()
-    console.log(`Computer:${computerSelection}`);
+    // console.log(`Computer:${computerSelection}`);
     computerTransitions()
     }
     else if(e.target['id'] === "btnP"){
     userInput = "PAPER";
-    console.log(userInput);
+    // console.log(userInput);
     oneRound()
-    console.log(`Computer:${computerSelection}`);
+    // console.log(`Computer:${computerSelection}`);
     computerTransitions()
 
     }
     else if(e.target['id'] === "btnS"){
     userInput = 'SCISSORS';
-    console.log(userInput);
+    // console.log(userInput);
     oneRound()
-    console.log(`Computer:${computerSelection}`);
+    // console.log(`Computer:${computerSelection}`);
     computerTransitions()
 
     }
@@ -139,6 +139,12 @@ document.getElementById('happenningP').innerText = tie;
         document.getElementById('scoreUser').innerText = `${userName} won`;
         document.getElementById('scorePC').innerText = "";
         removeItemOver();
+        var el = document.querySelector("#youNerd")
+        var img = document.createElement("img");
+        img.id = "imgNerd";
+        img.setAttribute('src', 'images/youNerd.png');
+     el.appendChild(img);
+        
         // here add an event that sets all the images and buttons to display: 'none',
         // and show an image of a user breaking a pc
 
@@ -147,6 +153,11 @@ document.getElementById('happenningP').innerText = tie;
         document.getElementById('scorePC').innerText = "Computer won";
          document.getElementById('scoreUser').innerText = "";
          removeItemOver();
+         var el = document.querySelector("#youLoser")
+        var img = document.createElement("img");
+        img.id = "imgLoser";
+        img.setAttribute('src', 'images/loser.png');
+        el.appendChild(img);
  // here add an event that sets all the images and buttons to display: 'none';
  // and show an image of a pc taking the world..lol
    } 
@@ -161,6 +172,7 @@ document.getElementById('happenningP').innerText = tie;
 function reload() {
     reload = location.reload();
 }
+
 
 
 
