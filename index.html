@@ -11,29 +11,34 @@
 </head>
 <body>
     <div id="header">
-     <h1>Let's play Rock Paper Scissors</h1>
+     <h1>Rock Paper Scissors</h1>
     </div> 
     <!-- end of header -->
     
     <div class="container">
    
         <div id="options">
-            <p>Computer:</p>
-            <div id="divR"><img src="images/Rock.png"></div>
-            <div id="divP"><img src="images/Paper.png"></div>
-            <div id="divS"><img src="images/Scissors.png"></div>
+            
+            <div id="divR"><img src="images/RockRobot.png"></div>
+            <div id="divP"><img src="images/PaperRobot.png"></div>
+            <div id="divS"><img src="images/ScissorsRobot.png"></div>
         </div>
-               <button onclick="game()" id="startGame">Start Game</button>
-               
-        <div class="buttons">
-            <p>You:</p>
-            <button  class="btn"  id="btnR" value="rock">Rock</button>
-            <button  class="btn"  id="btnP">Paper</button>
-            <button  class="btn"  id="btnS">Scissors</button>
-        </div>
+              <div class="buttonDiv"> 
+                <button onclick="game()" id="startGame">Start Game</button>
+            </div>
+               <p id="happenningP">Click on "Start Game"</p>
+            <div class="buttons" id="buttons">
+          
+                <button  class="btn"  id="btnR"> </button>
+                <button  class="btn"  id="btnP"> </button>
+                <button  class="btn"  id="btnS"> </button>
+            </div>
     </div>
-<p class="scoreUser">Your score:<span id="scoreUser"></span></p>
-<p class="scorePC">Computer's score:<span id="scorePC"></span></p>
+<p class="scoreUser"><span id="scoreUser"></span></p>
+<p class="scorePC"><span id="scorePC"></span></p>
+
+<button id="reload" onClick="window.location.reload();">Restart Game</button>
+
 
   
 </body>

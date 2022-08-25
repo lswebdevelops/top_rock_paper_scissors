@@ -3,53 +3,126 @@ body{
 	text-align: center;
 	padding: 0;
 }
-
+:root{
+	--main-shadow:2px 5px 15px 2px;
+	--main-color:rgb(234,67,0);
+}
 /* the images of the options: */
 #options{
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 55px;
+	border: solid rgb(222, 219, 219) 1px;
+	padding: 15px 5px 15px 5px;
+	border-radius: 5px;
 }
  #divR, #divP, #divS, img{
 	overflow: hidden;
 	Width:100px;
 	height: 100px;
-	box-shadow: 0px 8px 16px 0px;
+	box-shadow: var(--main-shadow);
+	border-radius: 5px;
 	
 }
+
 /* the buttons to choose */
 .buttons{
 	padding-top:50px ;
 	display: flex;
 	justify-content: space-around;
+	border: solid rgb(222, 219, 219) 1px;
+	padding: 15px 5px 15px 5px;
+	border-radius: 5px;
+}
+
+#happenningP{
+	padding: 30px 5px 15px 5px;
+	font-size: 20px;
+	color: var(--main-color);
+	margin: 0;
+
 }
 #btnR, #btnP, #btnS{
 	border: solid grey 1px;
 	border-radius: 5px;
 	Width:100px;
 	height: 100px;
-	font-weight: bold;
-	box-shadow: 0px 8px 16px 0px;
+	box-shadow: var(--main-shadow);
+	overflow: hidden;
 }
 
+#btnR{
+	background-image: url(images/Rock.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	transition: transform 1.9s;
+}
+
+
+
+ #btnP{
+	background-image: url(images/Paper.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	transition: transform 1.9s;
+}	
+
+
+ #btnS{
+	background-image: url(images/Scissors.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	transition: transform 1.9s;
+}
+.pcTransition{
+	transition: transform 1.9s;
+}
+.pcHandHidden{
+	display: node;
+}
+
+#btnR:active, #btnS:active ,#btnP:active, .pcTransition{
+	border: solid rgb(152, 152, 152) 2px;
+	transform: scale(1.3, 1.3);
+	transition:  0s;
+}
 /* the phrase whith will be shown when is your turn: */
 p{
-	color: blue;
+	color: var(--main-color);
+
 	padding-top: 25px;
 	font-size: 25px;
 	font-weight: bold;
 
 }
+.buttonDiv{
+	
+	padding: 5px 5px 5px 5px;
+}
 #startGame{
 	border: solid grey 1px;
 	border-radius: 5px;
-	Width:100px;
-	height: 35px;
+	Width:45%;
+	height: 55px;
 	font-weight: bold;
 	font-size: 15px;
-	box-shadow: 0px 8px 16px 0px;
+	transition: transform 1.9s;
 	background-color: aquamarine;
+}
+#startGame:active{
+	border: solid rgb(152, 152, 152) 2px;
+	transform: scale(1.3, 1.3);
+	transition:  0s;
 }
 .scoreUser, .scorePC{
 	padding: 0;
+}
+
+#reload{
+	border: solid grey 1px;
+	border-radius: 5px;
+	Width:45%;
+	height: 35px;
+	font-weight: bold;
+	font-size: 15px;
+	
 }
