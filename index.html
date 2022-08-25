@@ -10,8 +10,31 @@
     <title>Rock Paper Scissors   </title>
 </head>
 <body>
-    <h1>Let's play Rock Paper Scissors</h1>
- <p>Refresh the Page to Start</p>
+    <div id="header">
+     <h1>Let's play Rock Paper Scissors</h1>
+    </div> 
+    <!-- end of header -->
+    
+    <div class="container">
+   
+        <div id="options">
+            <p>Computer:</p>
+            <div id="divR"><img src="images/Rock.png"></div>
+            <div id="divP"><img src="images/Paper.png"></div>
+            <div id="divS"><img src="images/Scissors.png"></div>
+        </div>
+               <button onclick="game()" id="startGame">Start Game</button>
+               
+        <div class="buttons">
+            <p>You:</p>
+            <button  class="btn"  id="btnR" value="rock">Rock</button>
+            <button  class="btn"  id="btnP">Paper</button>
+            <button  class="btn"  id="btnS">Scissors</button>
+        </div>
+    </div>
+<p class="scoreUser">Your score:<span id="scoreUser"></span></p>
+<p class="scorePC">Computer's score:<span id="scorePC"></span></p>
+
   
 </body>
 

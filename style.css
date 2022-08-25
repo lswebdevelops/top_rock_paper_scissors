@@ -1,5 +1,55 @@
 body{
-	background-color: burlywood;
+	background-color: white;
 	text-align: center;
-	padding: 15px;
+	padding: 0;
+}
+
+/* the images of the options: */
+#options{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 55px;
+}
+ #divR, #divP, #divS, img{
+	overflow: hidden;
+	Width:100px;
+	height: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	
+}
+/* the buttons to choose */
+.buttons{
+	padding-top:50px ;
+	display: flex;
+	justify-content: space-around;
+}
+#btnR, #btnP, #btnS{
+	border: solid grey 1px;
+	border-radius: 5px;
+	Width:100px;
+	height: 100px;
+	font-weight: bold;
+	box-shadow: 0px 8px 16px 0px;
+}
+
+/* the phrase whith will be shown when is your turn: */
+p{
+	color: blue;
+	padding-top: 25px;
+	font-size: 25px;
+	font-weight: bold;
+
+}
+#startGame{
+	border: solid grey 1px;
+	border-radius: 5px;
+	Width:100px;
+	height: 35px;
+	font-weight: bold;
+	font-size: 15px;
+	box-shadow: 0px 8px 16px 0px;
+	background-color: aquamarine;
+}
+.scoreUser, .scorePC{
+	padding: 0;
 }
