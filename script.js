@@ -98,7 +98,7 @@ computerSelection= getComputerChoice();
     let playerSelection = userInput;
     // checks the selections and prints to the screen 
     if (playerSelection === computerSelection){
-        let tie = `It's a tie! ${playerSelection} is igual to ${computerSelection}`
+        let tie = `It's a tie! ${playerSelection} is iqual to ${computerSelection}`
 document.getElementById('happenningP').innerText = tie;
     } else if (playerSelection == 'ROCK' && computerSelection == 'SCISSORS'){
         document.getElementById('happenningP').innerText =  "You win! ROCK beats SCISSORS!";
